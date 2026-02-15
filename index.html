@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neural Networks & Their Advantages</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="header">
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+    <nav class="nav">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>
+        </span>
+        <span data-en="Neural Networks" data-ru="Нейросети">Neural Networks</span>
+      </a>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"></button>
+      <div class="nav-drawer" id="navDrawer">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" data-en="About" data-ru="О понятии">About</a></li>
+          <li><a href="#advantages" data-en="Advantages" data-ru="Преимущества">Advantages</a></li>
+          <li><a href="#examples" data-en="Examples" data-ru="Примеры">Examples</a></li>
+          <li><a href="#interactive" data-en="Interactive" data-ru="Интерактив">Interactive</a></li>
+          <li><a href="#research" data-en="Research" data-ru="Наука">Research</a></li>
+        </ul>
+        <div class="nav-drawer-lang">
+          <span class="nav-drawer-lang-label" data-en="Language" data-ru="Язык">Language</span>
+          <div class="lang-switch">
+            <button type="button" class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+            <button type="button" class="lang-btn" data-lang="ru" aria-label="Русский">RU</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title" data-en="Neural Networks & Their Advantages" data-ru="Нейросети и их преимущества">
+          Neural Networks & Their Advantages
+        </h1>
+        <p class="hero-desc" data-en="Neural networks are computing systems inspired by the human brain. They learn from data, recognize patterns, and make decisions—powering everything from voice assistants to medical diagnosis." data-ru="Нейросети — вычислительные системы, вдохновлённые мозгом человека. Они учатся на данных, распознают закономерности и принимают решения — от голосовых помощников до медицинской диагностики.">
+          Neural networks are computing systems inspired by the human brain. They learn from data, recognize patterns, and make decisions—powering everything from voice assistants to medical diagnosis.
+        </p>
+        <a href="#advantages" class="cta" data-en="Discover advantages" data-ru="Узнать преимущества">Discover advantages</a>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-blurs">
+          <span class="hero-blur hero-blur--1"></span>
+          <span class="hero-blur hero-blur--2"></span>
+          <span class="hero-blur hero-blur--3"></span>
+          <span class="hero-blur hero-blur--4"></span>
+          <span class="hero-blur hero-blur--5"></span>
+        </div>
+        <div class="hero-three-wrap" id="heroThreeWrap"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-about">
+      <h2 class="section-title" data-en="What are neural networks?" data-ru="Что такое нейросети?">What are neural networks?</h2>
+      <p class="section-lead" data-en="They are layers of connected nodes that process information. With enough data, they improve automatically—no need to program every rule by hand." data-ru="Это слои связанных узлов, обрабатывающих информацию. При достаточном объёме данных они улучшаются автоматически — не нужно прописывать каждое правило вручную.">
+        They are layers of connected nodes that process information. With enough data, they improve automatically—no need to program every rule by hand.
+      </p>
+    </section>
+
+    <section id="advantages" class="section section-advantages">
+      <h2 class="section-title" data-en="Key advantages" data-ru="Ключевые преимущества">Key advantages</h2>
+      <div class="advantages-grid">
+        <article class="advantage-card" data-advantage="speed">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3 data-en="Speed" data-ru="Скорость">Speed</h3>
+          <p data-en="Process huge amounts of data in seconds. Real-time recognition and decisions." data-ru="Обработка огромных объёмов данных за секунды. Распознавание и решения в реальном времени."></p>
+        </article>
+        <article class="advantage-card" data-advantage="accuracy">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <h3 data-en="Accuracy" data-ru="Точность">Accuracy</h3>
+          <p data-en="Outperform traditional algorithms in vision, language, and prediction tasks." data-ru="Превосходят классические алгоритмы в задачах зрения, языка и прогнозирования."></p>
+        </article>
+        <article class="advantage-card" data-advantage="automation">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </div>
+          <h3 data-en="Automation" data-ru="Автоматизация">Automation</h3>
+          <p data-en="Handle repetitive tasks without human intervention—from sorting to content creation." data-ru="Выполняют рутинные задачи без участия человека — от сортировки до создания контента."></p>
+        </article>
+        <article class="advantage-card" data-advantage="scale">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+          </div>
+          <h3 data-en="Scalability" data-ru="Масштабируемость">Scalability</h3>
+          <p data-en="Scale with more data and compute. The more you feed them, the smarter they get." data-ru="Масштабируются с ростом данных и вычислительных ресурсов. Чем больше данных — тем умнее система."></p>
+        </article>
+        <article class="advantage-card" data-advantage="adapt">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 11-9-9"/><path d="M21 3v9h-9"/></svg>
+          </div>
+          <h3 data-en="Adaptability" data-ru="Адаптивность">Adaptability</h3>
+          <p data-en="Learn new patterns from new data. One architecture, many applications." data-ru="Учатся новым закономерностям из новых данных. Одна архитектура — множество применений."></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="examples" class="section section-examples">
+      <h2 class="section-title" data-en="Examples in real life" data-ru="Примеры в жизни">Examples in real life</h2>
+      <p class="section-lead" data-en="Click a card to learn more." data-ru="Нажмите на карточку, чтобы узнать больше.">Click a card to learn more.</p>
+      <div class="examples-grid">
+        <button type="button" class="example-card" data-example="images">
+          <span class="example-icon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          </span>
+          <span class="example-label" data-en="Image generation & recognition" data-ru="Генерация и распознавание изображений">Image generation & recognition</span>
+        </button>
+        <button type="button" class="example-card" data-example="translators">
+          <span class="example-icon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </span>
+          <span class="example-label" data-en="Translators & language" data-ru="Переводчики и язык">Translators & language</span>
+        </button>
+        <button type="button" class="example-card" data-example="voice">
+          <span class="example-icon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v4M8 23h8"/></svg>
+          </span>
+          <span class="example-label" data-en="Voice assistants" data-ru="Голосовые помощники">Voice assistants</span>
+        </button>
+        <button type="button" class="example-card" data-example="health">
+          <span class="example-icon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </span>
+          <span class="example-label" data-en="Healthcare & diagnosis" data-ru="Медицина и диагностика">Healthcare & diagnosis</span>
+        </button>
+        <button type="button" class="example-card example-card--concept" data-example="concept">
+          <span class="example-icon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/><path d="M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          </span>
+          <span class="example-label" data-en="Models & application areas" data-ru="Модели и сферы применения">Models & application areas</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="interactive" class="section section-signal">
+      <h2 class="section-title" data-en="Signal in motion" data-ru="Сигнал в движении">Signal in motion</h2>
+      <p class="section-lead" data-en="Click Run and watch a signal pass through a tiny network. Real neural networks do this millions of times per second." data-ru="Нажмите «Запустить» и наблюдайте, как сигнал проходит по мини-сети. В реальных нейросетях такое происходит миллионы раз в секунду.">
+        Click Run and watch a signal pass through a tiny network. Real neural networks do this millions of times per second.
+      </p>
+      <div class="signal-demo">
+        <div class="signal-diagram" id="signalDiagram" aria-hidden="true">
+          <svg class="signal-svg" viewBox="0 0 320 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="signalGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="var(--accent)"/>
+                <stop offset="100%" stop-color="var(--accent-hover)"/>
+              </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="2" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <!-- Layer 1 → 2 -->
+            <line class="signal-line signal-line--1" x1="80" y1="30" x2="160" y2="40"/>
+            <line class="signal-line signal-line--2" x1="80" y1="50" x2="160" y2="40"/>
+            <line class="signal-line signal-line--3" x1="80" y1="50" x2="160" y2="60"/>
+            <line class="signal-line signal-line--4" x1="80" y1="90" x2="160" y2="80"/>
+            <!-- Layer 2 → 3 -->
+            <line class="signal-line signal-line--5" x1="160" y1="40" x2="240" y2="45"/>
+            <line class="signal-line signal-line--6" x1="160" y1="60" x2="240" y2="45"/>
+            <line class="signal-line signal-line--7" x1="160" y1="80" x2="240" y2="75"/>
+            <!-- Nodes -->
+            <g class="signal-layer signal-layer--in">
+              <circle class="signal-node" cx="60" cy="30" r="10"/>
+              <circle class="signal-node" cx="60" cy="50" r="10"/>
+              <circle class="signal-node" cx="60" cy="70" r="10"/>
+              <circle class="signal-node" cx="60" cy="90" r="10"/>
+            </g>
+            <g class="signal-layer signal-layer--mid">
+              <circle class="signal-node" cx="160" cy="40" r="10"/>
+              <circle class="signal-node" cx="160" cy="60" r="10"/>
+              <circle class="signal-node" cx="160" cy="80" r="10"/>
+            </g>
+            <g class="signal-layer signal-layer--out">
+              <circle class="signal-node" cx="260" cy="45" r="10"/>
+              <circle class="signal-node" cx="260" cy="75" r="10"/>
+            </g>
+          </svg>
+          <div class="signal-labels">
+            <span class="signal-label" data-en="Input" data-ru="Вход">Input</span>
+            <span class="signal-label" data-en="Hidden" data-ru="Скрытый">Hidden</span>
+            <span class="signal-label" data-en="Output" data-ru="Выход">Output</span>
+          </div>
+        </div>
+        <button type="button" class="signal-run-btn" id="signalRunBtn" data-en="Run signal" data-ru="Запустить сигнал">Run signal</button>
+      </div>
+    </section>
+
+    <section id="research" class="section section-research">
+      <h2 class="section-title" data-en="Research & further reading" data-ru="Научные статьи и материалы">Research & further reading</h2>
+      <p class="section-lead" data-en="Links to papers, courses, and resources." data-ru="Ссылки на статьи, курсы и материалы.">Links to papers, courses, and resources.</p>
+      <div class="research-grid" id="researchGrid"></div>
+    </section>
+  </main>
+
+  <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button type="button" class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p data-en="Neural Networks & Their Advantages — a brief narrative." data-ru="Нейросети и их преимущества — краткое повествование.">Neural Networks & Their Advantages — a brief narrative.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
