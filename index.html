@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,11 +30,24 @@
           <li><a href="#interactive" data-en="Interactive" data-ru="Интерактив">Interactive</a></li>
           <li><a href="#research" data-en="Research" data-ru="Наука">Research</a></li>
         </ul>
-        <div class="nav-drawer-lang">
-          <span class="nav-drawer-lang-label" data-en="Language" data-ru="Язык">Language</span>
-          <div class="lang-switch">
-            <button type="button" class="lang-btn active" data-lang="en" aria-label="English">EN</button>
-            <button type="button" class="lang-btn" data-lang="ru" aria-label="Русский">RU</button>
+        <div class="nav-drawer-right">
+          <div class="nav-drawer-theme">
+            <span class="nav-drawer-theme-label" data-en="Theme" data-ru="Тема">Theme</span>
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle light/dark">
+              <span class="theme-icon theme-icon--sun" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+              </span>
+              <span class="theme-icon theme-icon--moon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+              </span>
+            </button>
+          </div>
+          <div class="nav-drawer-lang">
+            <span class="nav-drawer-lang-label" data-en="Language" data-ru="Язык">Language</span>
+            <div class="lang-switch">
+              <button type="button" class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+              <button type="button" class="lang-btn" data-lang="ru" aria-label="Русский">RU</button>
+            </div>
           </div>
         </div>
       </div>
@@ -51,16 +64,93 @@
           Neural networks are computing systems inspired by the human brain. They learn from data, recognize patterns, and make decisions—powering everything from voice assistants to medical diagnosis.
         </p>
         <a href="#advantages" class="cta" data-en="Discover advantages" data-ru="Узнать преимущества">Discover advantages</a>
+        <div class="hero-badges" aria-hidden="false">
+          <div class="hero-badge">
+            <span class="hero-badge-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </span>
+            <span class="hero-badge-text" data-en="Fast learning" data-ru="Быстро учатся">Fast learning</span>
+          </div>
+          <div class="hero-badge">
+            <span class="hero-badge-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="6"/>
+                <circle cx="12" cy="12" r="2"/>
+              </svg>
+            </span>
+            <span class="hero-badge-text" data-en="High accuracy" data-ru="Высокая точность">High accuracy</span>
+          </div>
+          <div class="hero-badge">
+            <span class="hero-badge-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+              </svg>
+            </span>
+            <span class="hero-badge-text" data-en="Automation" data-ru="Автоматизация">Automation</span>
+          </div>
+        </div>
       </div>
       <div class="hero-visual" aria-hidden="true">
-        <div class="hero-blurs">
-          <span class="hero-blur hero-blur--1"></span>
-          <span class="hero-blur hero-blur--2"></span>
-          <span class="hero-blur hero-blur--3"></span>
-          <span class="hero-blur hero-blur--4"></span>
-          <span class="hero-blur hero-blur--5"></span>
+        <div class="hero-art" id="heroArt">
+          <svg class="hero-art-svg" viewBox="0 0 520 360" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="heroStroke" x1="30" y1="60" x2="500" y2="320" gradientUnits="userSpaceOnUse">
+                <stop stop-color="var(--accent)" stop-opacity="0.9"/>
+                <stop offset="0.55" stop-color="var(--accent-hover)" stop-opacity="0.55"/>
+                <stop offset="1" stop-color="#93c5fd" stop-opacity="0.35"/>
+              </linearGradient>
+              <radialGradient id="heroGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(170 150) rotate(35) scale(240 190)">
+                <stop stop-color="var(--accent)" stop-opacity="0.22"/>
+                <stop offset="0.55" stop-color="var(--accent-hover)" stop-opacity="0.10"/>
+                <stop offset="1" stop-color="transparent"/>
+              </radialGradient>
+              <radialGradient id="heroGlow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(380 220) rotate(-15) scale(220 170)">
+                <stop stop-color="#93c5fd" stop-opacity="0.18"/>
+                <stop offset="0.6" stop-color="var(--accent)" stop-opacity="0.08"/>
+                <stop offset="1" stop-color="transparent"/>
+              </radialGradient>
+            </defs>
+
+            <!-- Soft background glows -->
+            <rect x="0" y="0" width="520" height="360" fill="url(#heroGlow)"/>
+            <rect x="0" y="0" width="520" height="360" fill="url(#heroGlow2)"/>
+
+            <!-- Elegant wave-lines -->
+            <path d="M30 120 C 120 70, 170 70, 250 110 C 325 145, 380 155, 490 115" stroke="url(#heroStroke)" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+            <path d="M30 170 C 120 120, 175 120, 255 160 C 330 195, 390 205, 490 165" stroke="url(#heroStroke)" stroke-width="1.6" stroke-linecap="round" opacity="0.55"/>
+            <path d="M30 220 C 115 180, 185 185, 265 215 C 340 243, 400 252, 490 215" stroke="url(#heroStroke)" stroke-width="1.4" stroke-linecap="round" opacity="0.35"/>
+
+            <!-- Minimal dots (constellation) -->
+            <g opacity="0.55" fill="var(--text)">
+              <circle cx="78" cy="95" r="2.2" opacity="0.45"/>
+              <circle cx="132" cy="140" r="1.8" opacity="0.4"/>
+              <circle cx="205" cy="92" r="2.0" opacity="0.35"/>
+              <circle cx="248" cy="146" r="2.4" opacity="0.55"/>
+              <circle cx="315" cy="126" r="1.7" opacity="0.35"/>
+              <circle cx="365" cy="190" r="2.1" opacity="0.45"/>
+              <circle cx="430" cy="145" r="2.6" opacity="0.6"/>
+              <circle cx="455" cy="220" r="1.8" opacity="0.35"/>
+            </g>
+
+            <!-- Thin connecting strokes -->
+            <g stroke="url(#heroStroke)" stroke-width="1" opacity="0.25" stroke-linecap="round">
+              <path d="M78 95 L132 140 L248 146 L365 190 L455 220"/>
+              <path d="M205 92 L248 146 L430 145"/>
+            </g>
+
+            <!-- Accent nodes -->
+            <g>
+              <circle cx="248" cy="146" r="8" fill="var(--accent)" opacity="0.12"/>
+              <circle cx="248" cy="146" r="3" fill="var(--accent)"/>
+              <circle cx="430" cy="145" r="7" fill="var(--accent-hover)" opacity="0.12"/>
+              <circle cx="430" cy="145" r="2.8" fill="var(--accent-hover)"/>
+            </g>
+          </svg>
         </div>
-        <div class="hero-three-wrap" id="heroThreeWrap"></div>
       </div>
     </section>
 
@@ -212,17 +302,20 @@
 
   <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
     <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-accent-bar" aria-hidden="true"></div>
       <button type="button" class="modal-close" id="modalClose" aria-label="Close">&times;</button>
-      <h3 class="modal-title" id="modalTitle"></h3>
-      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-inner">
+        <h3 class="modal-title" id="modalTitle"></h3>
+        <div class="modal-body" id="modalBody"></div>
+      </div>
     </div>
   </div>
 
   <footer class="footer">
-    <p data-en="Neural Networks & Their Advantages — a brief narrative." data-ru="Нейросети и их преимущества — краткое повествование.">Neural Networks & Their Advantages — a brief narrative.</p>
+    <p class="footer-desc" data-en="Neural Networks & Their Advantages — a brief narrative." data-ru="Нейросети и их преимущества — краткое повествование.">Neural Networks & Their Advantages — a brief narrative.</p>
+    <p class="footer-credit" data-en="Made by student of group 3АСС9-13 Ivanov Timur" data-ru="Сделал студент группы 3АСС9-13 Иванов Тимур">Made by student of group 3АСС9-13 Ivanov Timur</p>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
